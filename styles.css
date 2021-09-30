@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* IE11 width fix for blocks within flex items */
+    max-width: 100%;
+}
+
+nav,
+main,
+section,
+footer {
+    /* IE11 fix */
+    display: block;
+}
+
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+b,
+em,
+dd {
+    font-weight: 900;
+}
+
+h1,
+h2,
+h3 {
+    color: gold;
+    background-color: darkgreen;
+    padding: 0.5rem 1rem;
+    margin: 0.125rem auto;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    color: darkgreen;
+}
+
+html {
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: floralwhite;
+    scroll-padding-top: 4rem;
+}
+
+html.dark {
+    color: lightgray;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    height: 4rem;
+    color: gold;
+    background-color: darkgreen;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-bottom: 0.125rem gold solid;
+    width: 100%;
+}
+
+nav img {
+    width: auto;
+    height: 2rem;
+    color: gold;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 2rem;
+}
+
+#mode {
+    cursor: pointer;
+}
+
+main {
+    margin: 4rem auto 0;
+    max-width: 80rem;
+    padding: 0 1rem;
+}
+
+#banner {
+    padding: 0.5rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.125rem darkgreen solid;
+}
+
+section {
+    border-bottom: 0.125rem darkgreen solid;
+    padding: 0.5rem 0 1rem;
+    margin-bottom: 2rem;
+}
+
+#projects a {
+    text-decoration: none;
+}
+
+figure {
+    display: flex;
+    margin: 2rem 0;
+}
+
+figure>img {
+    flex: 0 0;
+}
+
+#projects figure>figcaption {
+    flex: 1 0;
+}
+
+#projects img {
+    width: 180px;
+    height: auto;
+    border: 1px darkgreen solid;
+    margin-right: 1rem;
+}
+
+#skills ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#skills li {
+    margin-right: 2em;
+}
+
+#skills figure {
+    align-items: center;
+    margin: 1rem 0;
+}
+
+#skills img {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5rem;
+}
+
+dt {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+dd {
+    display: inline-block;
+}
+
+dd a:link,
+dd a:visited {
+    text-decoration: none;
+}
+
+dd a:hover {
+    color: darkgreen;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: darkgreen;
+    color: gold;
+    padding: 0.5rem;
+    font-size: 87.5%;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2,
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        scroll-padding-top: 1.5rem;
+    }
+    main {
+        margin-top: 1.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2,
+    h3,
+    h4 {
+        font-size: 1rem;
+    }
+    nav {
+        padding: 0 0.25rem;
+        height: 1.5rem;
+        font-size: 0.75rem;
+    }
+    nav img {
+        height: 0.75rem;
+    }
+    nav li {
+        padding-left: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 12px;
+    }
+    figure {
+        flex-direction: column;
+        margin: 1rem 0;
+        align-items: flex-start;
+    }
+    #skills figure {
+        align-items: center;
+    }
+    #projects img,
+    #skills img {
+        margin: 0 0 0.25rem;
+    }
+    h4 {
+        padding-bottom: 0.25rem;
+    }
+}
