@@ -134,10 +134,6 @@ figure {
     margin: 2rem 0;
 }
 
-figure>img {
-    flex: 0 0;
-}
-
 #projects figure>figcaption {
     flex: 1 0;
 }
